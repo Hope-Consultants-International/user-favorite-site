@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="org.hopeconsultants.user.favorite.site.model.FavoriteSite" />
+	<class name="org.hopeconsultants.user.favorite.site.model.impl.FavoriteSiteImpl" table="UserFavoriteSite_FavoriteSite">
+		<composite-id class="org.hopeconsultants.user.favorite.site.service.persistence.FavoriteSitePK" name="primaryKey">
+			<key-property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="org.hopeconsultants.user.favorite.site">
+    <namespace>UserFavoriteSite</namespace>
+    
+    <entity local-service="true" name="FavoriteSite" remote-service="false" uuid="false">
+
+        <!--  Mapping -->
+
+        <column name="groupId" type="long" primary="true" />
+        <column name="userId" type="long" primary="true" />
+
+        <!--  Finders -->
+        <finder name="GroupId" return-type="Collection">
+            <finder-column name="groupId" />
+        </finder>
+        <finder name="UserId" return-type="Collection">
+            <finder-column name="userId" />
+        </finder>
+        <finder name="U_G" return-type="Collection">
+            <finder-column name="userId" />
+            <finder-column name="groupId" />
+        </finder>
+    </entity>
+
+</service-builder>

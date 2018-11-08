@@ -1,0 +1,10 @@
+Bundle-Name: User Favorite Site API
+Bundle-SymbolicName: org.hopeconsultants.user.favorite.site.api
+Bundle-Version: 1.0.0
+Export-Package: \
+    org.hopeconsultants.user.favorite.site.exception,\
+    org.hopeconsultants.user.favorite.site.model,\
+    org.hopeconsultants.user.favorite.site.service,\
+    org.hopeconsultants.user.favorite.site.service.persistence,\
+    org.hopeconsultants.user.favorite.site.tools
+-includeresource: META-INF/service.xml=../user-favorite-site-service/service.xml
